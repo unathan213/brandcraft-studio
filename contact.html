@@ -94,7 +94,12 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h3 style="font-size: 24px; margin-bottom: 25px;">Send a Message</h3>
-                    <form action="#" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="57a74c11-5d3b-4dcc-a6f2-4ae7c5a52387">
+                        <input type="hidden" name="subject" value="New Contact from BrandCraft Studio">
+                        <input type="hidden" name="from_name" value="BrandCraft Studio">
+
                         <div class="form-group">
                             <label for="name">Your Name *</label>
                             <input type="text" id="name" name="name" required placeholder="Juan dela Cruz">
@@ -119,13 +124,13 @@
                             <label for="service">What do you need? *</label>
                             <select id="service" name="service" required>
                                 <option value="">Select a service</option>
-                                <option value="audit">Free Business Audit</option>
-                                <option value="branding">Brand Identity</option>
-                                <option value="website">Website Development</option>
-                                <option value="social">Social Media Marketing</option>
-                                <option value="automation">Messenger Automation</option>
-                                <option value="package">Complete Package</option>
-                                <option value="other">Other / Not Sure</option>
+                                <option value="Free Business Audit">Free Business Audit</option>
+                                <option value="Brand Identity">Brand Identity</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Social Media Marketing">Social Media Marketing</option>
+                                <option value="Messenger Automation">Messenger Automation</option>
+                                <option value="Complete Package">Complete Package</option>
+                                <option value="Other">Other / Not Sure</option>
                             </select>
                         </div>
 
@@ -133,11 +138,11 @@
                             <label for="budget">Budget Range</label>
                             <select id="budget" name="budget">
                                 <option value="">Select budget range</option>
-                                <option value="5k-10k">P5,000 - P10,000</option>
-                                <option value="10k-20k">P10,000 - P20,000</option>
-                                <option value="20k-50k">P20,000 - P50,000</option>
-                                <option value="50k+">P50,000+</option>
-                                <option value="unsure">Not sure yet</option>
+                                <option value="P5,000 - P10,000">P5,000 - P10,000</option>
+                                <option value="P10,000 - P20,000">P10,000 - P20,000</option>
+                                <option value="P20,000 - P50,000">P20,000 - P50,000</option>
+                                <option value="P50,000+">P50,000+</option>
+                                <option value="Not sure yet">Not sure yet</option>
                             </select>
                         </div>
 
@@ -148,7 +153,7 @@
 
                         <div class="form-group">
                             <label for="social">Your Business Facebook/Instagram (optional)</label>
-                            <input type="url" id="social" name="social" placeholder="https://facebook.com/yourbusiness">
+                            <input type="url" id="social" name="social_link" placeholder="https://facebook.com/yourbusiness">
                         </div>
 
                         <button type="submit" class="btn btn-primary">Send Message</button>
